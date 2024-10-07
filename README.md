@@ -31,12 +31,12 @@ docker build . -t wooks527/lisa2024_task2_seg
 
 ```
 docker run -itd \
-  --name lisa2024_task2_qa \
+  --name lisa2024_task2_seg \
   -v [DATA_DIR]:/workspace/nnUNet_raw/Dataset901_LISA \
   -v [PROJECT_DIR]:/workspace \
   --device=nvidia.com/gpu=all \
   --shm-size=320g \
-  wooks527/lisa2024_task1_qa:latest
+  wooks527/lisa2024_task2_seg:latest
 ```
 - `DATA_DIR`: Path to the directory where the data is located.
 - `PROJECT_DIR`: Path to the directory where the code is stored.
